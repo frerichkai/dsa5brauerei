@@ -89,7 +89,7 @@ Ein Dokument oder Gebräu aus der Ilaris-Brauerei ist letztendlich ein HTML Doku
 
 ### Woher bekomme ich Bilder?
 
-Wir stellen einige Bilder über ilaris-online.de bereit (TODO: Link/Example), die ausschließlich für nicht-komerzielle Projekte mit Ilaris bezug verwendet werden dürfen (TODO: Details). Du kannst aber eigene Bilder zB auf [Imgur](https://www.imgur.com) hochladen und die url zum Bild dann benutzen um beliebige Bilder in deinem Gebräu anzuzeigen. Bitte achte selbstständig darauf, dass du entsprechende Rechte hast, das Bild zu verwenden.
+Wir werden einige Bilder aus dem Ilaris-Fanwork Illustrationen direkt über ilaris-online.de bereitstellen und über das Snippet-Menü des Editors zugänglich machen. Diese Assets dürfen ausschließlich für nicht-komerzielle Projekte mit Ilaris-Bezug verwendet werden. Du kannst aber eigene Bilder zB auf [Imgur](https://www.imgur.com) hochladen und die Url zum Bild dann benutzen um beliebige Bilder in deinem Gebräu anzuzeigen. Du bist dafür verantworlich, dass du entsprechende Rechte hast, das Bild zu verwenden.
 
 \page
 
