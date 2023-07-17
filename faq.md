@@ -62,7 +62,7 @@ pre {
 ```
 
 # FAQ
-{{wide Updated Oct. 11, 2021}}
+{{wide Letzte Änderung Juli 2023}}
 
 
 ### Die Seite ist offline! Nur bei mir?
