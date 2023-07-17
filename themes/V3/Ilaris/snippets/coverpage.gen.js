@@ -141,7 +141,7 @@ module.exports = {
 			\page
 			{{rueckseite}}
 
-			# ${_.sample(subtitles)}
+			# ${_.sample(titles)}
 			:
 			## ${_.sample(subtitles)}
 			:
