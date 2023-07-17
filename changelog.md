@@ -5,16 +5,23 @@ Wir betreiben nur den Ilaris-Fork des eigentlich englishsprachigen auf DnD ausge
 
 ### V0.1
 ##### Layout
+- Eigenes Design etwas schlichter als das Regelwerk
 - Schriftarten, Farben und Stile
-- Seitenlayout, Überschriften und Hintergrund
-- Ilaris Assets (Kästen, Logos, etc.)
-- Verschiedene Vor- und Rückseiten
-- Manöver- bzw. Spielkarten
+- A4 Seitenlayout, Überschriften und Hintergrund
+- Ilaris Assets (Kästen, Logos, Stichpunkte, etc.)
+- Anpassbares Design für Vor- und Rückseiten
+- Manöver- bzw. Spielkarten mit Magic Seitenformat
+- Kreaturenkästen (WIP)
 ##### Inhalte
-- Startseite und Changelog
+- Startseite, FAQ und Changelog
 - Deutsche Übersetzung vom UI und css Klassen
 - Angepasste Menüs mit eigenen Beispielen
-- Eine Spielhilfe als Beispiel/Vorlage
-- Template-Menu
+- Snippets für ganze Beispielseiten
+- Eine Spielhilfe als Vorlage (Template)
+- Template-Menu für weitere Vorlagen (zB Kartendeck)
+- Herunterladen des Textes (Backup)
+- Im Text verwendbare Symbole
 ###### Infrastruktur
 - Hosting auf dem [ilaris-online](ilaris-online.de) Server
+- Entfernen von Google und anderen externen Aufrufen
+- Anmeldung entfernt (alles via share/edit links)
