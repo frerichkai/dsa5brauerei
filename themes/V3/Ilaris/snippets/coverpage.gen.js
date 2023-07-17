@@ -105,7 +105,7 @@ module.exports = {
 		  # ${_.sample(titles)}
 		  ## ${_.sample(subtitles)}
 
-		  ![Hintergrund](https://i.imgur.com/IwHRrbF.jpg){position:absolute,bottom:0,left:0,height:100%}
+		  ![Hintergrund](https://i.imgur.com/IwHRrbF.jpg){position:absolute,bottom:0,left:0,width:100%,height:100%}
 
 		  {{fusszeile 
 		    Ilaris - Schlanke Regeln für Aventurien
@@ -125,7 +125,7 @@ module.exports = {
 			## ${_.sample(subtitles)}
 
 			{{maske,mitte
-			  ![Hintegrund](https://i.imgur.com/IsfUnFR.jpg)
+			  ![Hintegrund](https://i.imgur.com/IsfUnFR.jpg){width:100%,height:100%}
 			}}
 
 			{{fusszeile 
