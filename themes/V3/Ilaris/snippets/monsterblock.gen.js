@@ -65,6 +65,14 @@ const getType = function(){
 	return `${_.sample(['Tiny', 'Small', 'Medium', 'Large', 'Gargantuan', 'Stupidly vast'])} ${_.sample(['beast', 'fiend', 'annoyance', 'guy', 'cutie'])}`;
 };
 
+const kreaturtypen = [
+	'tier',
+	'untod',
+	'geist',
+	'mythen',
+	'humanoid'
+];
+
 const getAlignment = function(){
 	return _.sample([
 		'annoying evil',
@@ -183,19 +191,29 @@ module.exports = {
 	},
 	creature : function(){
 		return dedent`
-			{{kreatur
+			{{kreatur,${_.sample(kreaturtypen)}
 			## Randomici
 			*Eine Kreatur mit zufälligen Werten*
 			___
 			**Wundschwelle:** :: ${_.random(4, 9)}
 			**Initiative:**  :: ${_.random(1, 6)}
 			___
+			|  WS  |  GS  |  INI  |  MR | 
+			|:-----:|:-----:|:-----:|:-----:|
+			|${_.random(3, 6)}|${_.random(4, 9)}|${_.random(1, 6)}|${_.random(2, 4)}|
+			___
 			|  KK  |  KO  |  KL  |  IN  |  FF  |  WE  |
 			|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 			|${_.random(4, 9)}|${_.random(4, 9)}|${_.random(4, 9)}|${_.random(4, 9)}|${_.random(4, 9)}|${_.random(4, 9)}|
 			___
+			| Nahkampf  | RW | AT | VT | TP    |
+			|:----------|:--:|:--:|:--:|------:|
+			| **Tritt** | 2  | 14 | 10 | 2W6+8 |
+			| *Niederwerfen +4, Zwei Angriffe pro Iniphase, Zerbrechlich* |||||
+			___
 			**Beschreibung:** :: Das 7 Beinige Wesen, wirkt unberechenbar. Es ist schwer vorherzusehen, was es als nächstes tut.
 			**Kurzlebig:** :: Die Lebensdauer ist kurz und meist auf Experimente in der Brauerei begrenzt. Verlassen tut sie die Brauerei eher selten.
+			**Kreaturentyp:** :: Schwierig in eine der Kategorien einzuordnen. Zur Auswahl stehen: tier, humanoid, daemon, daimonid, elementar, fee, geist, mythen und untod.
 			___
 			**Quelle:** Die Ilaris-Brauerei
 			}}
