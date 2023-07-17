@@ -55,9 +55,7 @@ const NotificationPopup = createClass({
 			<i className='fas fa-info-circle info' />
 			<div className='header'>
 				<h3>Hinweis</h3>
-				<small>
-					Diese Website verbessert sich stetig und wir arbeiten daran, neue Features umzusetzen und Bugs zu beseitigen. Bitte beachte folgendes:
-				</small>
+				<small>Diese Website befindet sich noch in arbeit, bitte beacht:</small>
 			</div>
 			<ul>{_.values(this.state.notifications)}</ul>
 		</div>;
