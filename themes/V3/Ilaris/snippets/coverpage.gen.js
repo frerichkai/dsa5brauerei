@@ -105,7 +105,7 @@ module.exports = {
 		  # ${_.sample(titles)}
 		  ## ${_.sample(subtitles)}
 
-		  ![background image](https://i.imgur.com/IwHRrbF.jpg){position:absolute,bottom:0,left:0,height:100%}
+		  ![Hintergrund](https://i.imgur.com/IwHRrbF.jpg){position:absolute,bottom:0,left:0,height:100%}
 
 		  {{fusszeile 
 		    Ilaris - Schlanke Regeln für Aventurien
@@ -118,15 +118,14 @@ module.exports = {
 	frontPart : function() {
 		return dedent`
 			{{vorderseite}}
-			{{maskemitte}}
 
 			{{logo ![Ilaris Würfel-Logo](/assets/ilaris/logo/icon_rot.png)}}
 
 			# ${_.sample(titles)}
 			## ${_.sample(subtitles)}
 
-			{{imageMaskCenter11,--offsetX:0%,--offsetY:-10%,--rotation:0
-			  ![background image](https://i.imgur.com/IsfUnFR.jpg){position:absolute,bottom:0,left:0,height:100%}
+			{{maske,mitte
+			  ![Hintegrund](https://i.imgur.com/IsfUnFR.jpg)
 			}}
 
 			{{fusszeile 
@@ -135,20 +134,6 @@ module.exports = {
 
 			\page
 			\n`;
-	},
-
-	part : function() {
-		return dedent`
-			{{partCover}}
-
-			# PART X
-			## ${_.sample(subtitles)}
-
-			{{imageMaskEdge${_.random(1, 8)},--offset:10cm,--rotation:180
-			  ![Background image](https://i.imgur.com/9TU96xY.jpg){position:absolute,bottom:0,left:0,height:100%}
-			}}
-
-			\page`;
 	},
 
 	backRight : function() {
@@ -184,11 +169,10 @@ module.exports = {
 			![](/assets/ilaris/maskotchen-kopie-2.webp)
 			}}
 			
-			{{imageMaskEdge5,--offset:17%,--rotation:270
-			![](https://i.imgur.com/GZfjDWV.png){height:100%}
+			{{maske,rechts
+			<!-- ergänze zB ,--offset:-4cm um den Textbereich breiter zu machen -->
+			![Hintergrund](https://i.imgur.com/GZfjDWV.png)
 			}}
-			<!-- Use --offset to shift the mask away from page center (can use cm instead of %)
-				Use --rotation to set rotation angle in degrees. -->
 			`;
 	},
 
@@ -225,11 +209,9 @@ module.exports = {
 			![](/assets/ilaris/maskotchen-kopie-2.webp)
 			}}
 
-			{{imageMaskEdge5,--offset:40%,--rotation:180
-			![](https://i.imgur.com/GZfjDWV.png){height:100%}
+			{{maske,oben
+			![Hintergrund](https://i.imgur.com/GZfjDWV.png){height:100%}
 			}}
-			<!-- Use --offset to shift the mask away from page center (can use cm instead of %)
-				Use --rotation to set rotation angle in degrees. -->
 			`;
 	},
 

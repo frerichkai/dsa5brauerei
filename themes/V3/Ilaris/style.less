@@ -1537,7 +1537,7 @@ body {
 
 	h1 {
 		//margin-bottom: .3cm;
-		font-size: 1.35cm;
+		font-size: 1.2cm;
 		line-height: 0.95em;
 		font-family: Cinzel;
 		text-align: center;
@@ -1588,7 +1588,6 @@ body {
 	}
 
 	p {
-		font-family: Cinzel;
 		line-height: 1.3em;
 		font-size: 0.45cm;
 		font-weight: 500;
@@ -1616,7 +1615,7 @@ body {
 
 	td {
 		font-family: 'Cinzel';
-		font-size: 0.45cm;
+		font-size: 0.43cm;
 		font-weight: 600;
 		font-variant-caps: petite-caps;
 		vertical-align: middle;
@@ -1989,6 +1988,8 @@ body {
 			position: absolute;
 			display: block;
 			bottom: 0;
+			left: 0;
+			height: 100%;
 		}
 
 		&.unten {
@@ -2027,6 +2028,18 @@ body {
 			--revealer: linear-gradient(0deg, rgba(0, 0, 0, .2) 0%, rgba(0, 0, 0, 0.2));
 			--checkerboard: url(/assets/waterColorMasks/missingImage.png); //shows any masked regions not filled by image
 		}
+	}
+
+	.rechts {
+		--wc : url(/assets/waterColorMasks/edge/0005.webp);
+		--offset: 17%;
+		--rotation: 270;
+	}
+
+	.oben {
+		--wc : url(/assets/waterColorMasks/edge/0005.webp);
+		--offset:40%;
+		--rotation:180;
 	}
 
 	.mitte {
