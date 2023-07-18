@@ -475,7 +475,9 @@ module.exports = [
 				gen: dedent`
 				{{keininhalt}}
 
-				# Impressum 
+				# Impressum
+
+				![](/assets/ilaris/logo/icon_grau.png) {position:absolute,top:6.2cm,left:1.9cm,width:80%,mix-blend-mode:multiply,opacity:15%}
 
 				{{wide,width:80%,margin:auto
 				{{credit
