@@ -481,7 +481,7 @@ module.exports = [
 
 				{{wide,width:80%,margin:auto
 				{{credit
-				## Autor
+				## Schreibende
 				Dein Name
 				::
 				## Veröffentlichung
@@ -493,7 +493,7 @@ module.exports = [
 				## Lektorat
 				Person A und B
 				::
-				## Spieletester
+				## Spieletests
 				Person A, B und C
 				::
 				## Kontakt
