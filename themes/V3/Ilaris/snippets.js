@@ -481,7 +481,7 @@ module.exports = [
 
 				{{wide,width:80%,margin:auto
 				{{credit
-				## Schreibende
+				## Text
 				Dein Name
 				::
 				## Veröffentlichung
