@@ -484,8 +484,8 @@ module.exports = [
 				## Autor
 				Dein Name
 				::
-				## Veröffentlichung / Version
-				${new Intl.DateTimeFormat('de', {day:'2-digit', month:'2-digit', year:'numeric'}).format(new Date())} / 1.0
+				## Veröffentlichung
+				${new Intl.DateTimeFormat('de', {day:'2-digit', month:'2-digit', year:'numeric'}).format(new Date())} / Version 1.0
 				::
 				## Illustrationen
 				Weitere Credits
@@ -494,12 +494,12 @@ module.exports = [
 				Person A und B
 				::
 				## Spieletester
-				Freund A, B und C
+				Person A, B und C
 				::
 				## Kontakt
 				📧 beispiel@example.com
 				<br/>
-				![](/assets/discord.png) {width:15px} discordapp.com/users/DeineID
+				![](/assets/discord.png) {width:14px} https://discordapp.com/users/DeineID
 				<br/>
 				🌐 https://brauerei.ilaris-online.de
 
@@ -522,9 +522,12 @@ module.exports = [
 				Weight, Wheelbarrow von Delapouite
 				Warlord helmet von Caro Asercion
 				::
-				#### Bilder
+				#### Illustrationen
 				Ilaris-Grafiken: Copyright [Bernhard Eisner](https://bernhard_eisner.artstation.com/)  
 				Cover-Artwork: Copyright <a href="https://www.freepik.com/free-photo/angel-quiet-primeval-forest-digital-painting_15174520.htm">Image by liuzishan</a> on Freepik  
+				::
+				#### Layout und Dokument-Generierung
+				https://brauerei.ilaris-online.de
 				}}
 
 				}}
