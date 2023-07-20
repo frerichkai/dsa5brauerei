@@ -383,34 +383,62 @@ module.exports = [
 		view: 'text',
 		snippets: [
 			{
-				name: 'Klassentabelle',
-				icon: 'fas fa-table',
-				gen: ClassTableGen.full('classTable,frame,decoration,wide'),
+				name : 'Tabelle',
+				icon : 'fas fa-th-list',
+				gen  : function(){
+					return dedent`
+						##### Schwierigkeiten von Proben
+						| Probenschwierigkeiten | PW = 2 | PW = 10 | PW = 18 |
+						|:----------------------|:------:|:-------:|:-------:|
+						| alltäglich (90%)      | 4      | 12      | 20      |
+						| einfach (72%)         | 10     | 18      | 26      |
+						| schwierig (43%)       | 14     | 22      | 30      |
+						| unreal. (16%)         | 18     | 26      | 34      |
+						| spektakulär (1%)      | 22     | 30      | 38      |
+						\n`;
+				}
 			},
 			{
-				name: 'Klassentabelle (randlos)',
-				icon: 'fas fa-border-none',
-				gen: ClassTableGen.full('classTable,wide'),
+				name : 'Geteilte Tabelle',
+				icon : 'fas fa-th-large',
+				gen  : function(){
+					return dedent`
+						##### Kampfmodifikatoren
+						{{column-count:2
+						| Nahkampf              | Mod |
+						|:----------------------|----:|
+						| knietiefes Wasser     | -2  |
+						| hüfttiefes Wasser     | -4  |
+						| schultertiefes Wasser | –8  |
+						
+						| Fernkampf           | Mod |
+						|:--------------------|----:|
+						| sehr groß (Elefant) | +8  |
+						| mittel (Mensch)     | 0   |
+						| sehr klein (Hase)   | –8  |
+						}}					
+						\n`;
+				}
 			},
 			{
-				name: '1/2 Klassentabelle',
-				icon: 'fas fa-list-alt',
-				gen: ClassTableGen.half('classTable,decoration,frame'),
-			},
-			{
-				name: '1/2 Klassentabelle (randlos)',
-				icon: 'fas fa-border-none',
-				gen: ClassTableGen.half('classTable'),
-			},
-			{
-				name: '1/3 Klassentabelle',
-				icon: 'fas fa-border-all',
-				gen: ClassTableGen.third('classTable,frame'),
-			},
-			{
-				name: '1/3 Klassentabelle (randlos)',
-				icon: 'fas fa-border-none',
-				gen: ClassTableGen.third('classTable'),
+				name : 'Breite Tabelle',
+				icon : 'fas fa-list',
+				experimental: true,
+				gen  : function(){
+					return dedent`			
+						{{weit
+						##### Fernkampfwaffen
+						|Waffe | TP  | RW  | LZ | Härte | Eigenschaften |
+						|:------------------------|:-----:|:----------------|--------:|:-----------|:--|
+						| ***Bögen***  ||||||
+						| &emsp; Kurzbogen  | 2W6+1 | 16 | 0 | 3 | Zweihändig |
+						| &emsp; Langbogen  | 2W6+3 | 64 | 1 | 3 | Schwer (4), Zweihändig, kein Reittier
+						| ***Armbrüste***  ||||||
+						| &emsp; Arbalette | 3W6+2 | 32 | 8 | 5 | Niederwerfen (-4), Zweihändig
+						| &emsp; Arbalone | 3W6+7 | 64 | 16 | 6 | Niederwerfen (-8), kein Reittier, stationär
+						}}
+						\n`;
+				}
 			},
 			{
 				name: 'Runen',

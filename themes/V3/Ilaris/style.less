@@ -54,7 +54,8 @@
 	//Ilaris-Regelwerk
 	//--IR_Dunkelrot: #450c15;  // todo: update
 	--IR_Dunkelrot: var(--MK_Rot);  // todo: update
-	--IR_Beige: #efd0b3; // todo: update?
+	//--IR_Beige: #efd0b3; // todo: update?
+	--IR_Beige: var(--HB_Color_Accent);
 }
 
 @page {
@@ -783,7 +784,9 @@ body {
 				font-size: 0.304cm; //Monster size and type subtext
 				margin-bottom: 0;
 				background-color: none;
-				margin-right: 64px;
+				padding-right: 64px;
+				display: table-cell;
+				vertical-align: middle;
 				height: 29px;
 				overflow:hidden;
 			}
@@ -837,30 +840,57 @@ body {
 	}
 	.kreatur.tier{
 		background: url(/assets/ilaris/kreaturentypen/tier.png) 0px 0px, linear-gradient(rgba(0,0,0,0) 64px, 65px, var(--IR_Beige));
+		background-size: 64px, auto;
+		background-repeat: no-repeat;
+		background-position-x: right;
 	}
 	.kreatur.humanoid{
-		background-image: url(/assets/ilaris/kreaturentypen/tier.png) 0px 0px, linear-gradient(rgba(0,0,0,0) 64px, 65px, var(--IR_Beige));
+		background: url(/assets/ilaris/kreaturentypen/tier.png) 0px 0px, linear-gradient(rgba(0,0,0,0) 64px, 65px, var(--IR_Beige));
+		background-size: 64px, auto;
+		background-repeat: no-repeat;
+		background-position-x: right;
 	}
 	.kreatur.daemon{
-		background-image: url(/assets/ilaris/kreaturentypen/daemon.png) 0px 0px, linear-gradient(rgba(0,0,0,0) 64px, 65px, var(--IR_Beige));
+		background: url(/assets/ilaris/kreaturentypen/daemon.png) 0px 0px, linear-gradient(rgba(0,0,0,0) 64px, 65px, var(--IR_Beige));
+		background-size: 64px, auto;
+		background-repeat: no-repeat;
+		background-position-x: right;
 	}
 	.kreatur.daimonid{
-		background-image: url(/assets/ilaris/kreaturentypen/daimonid.png) 0px 0px, linear-gradient(rgba(0,0,0,0) 64px, 65px, var(--IR_Beige));
+		background: url(/assets/ilaris/kreaturentypen/daimonid.png) 0px 0px, linear-gradient(rgba(0,0,0,0) 64px, 65px, var(--IR_Beige));
+		background-size: 64px, auto;
+		background-repeat: no-repeat;
+		background-position-x: right;
 	}
 	.kreatur.elementar{
-		background-image: url(/assets/ilaris/kreaturentypen/elementar.png) 0px 0px, linear-gradient(rgba(0,0,0,0) 64px, 65px, var(--IR_Beige));
+		background: url(/assets/ilaris/kreaturentypen/elementar.png) 0px 0px, linear-gradient(rgba(0,0,0,0) 64px, 65px, var(--IR_Beige));
+		background-size: 64px, auto;
+		background-repeat: no-repeat;
+		background-position-x: right;
 	}
 	.kreatur.fee{
-		background-image: url(/assets/ilaris/kreaturentypen/fee.png) 0px 0px, linear-gradient(rgba(0,0,0,0) 64px, 65px, var(--IR_Beige));
+		background: url(/assets/ilaris/kreaturentypen/fee.png) 0px 0px, linear-gradient(rgba(0,0,0,0) 64px, 65px, var(--IR_Beige));
+		background-size: 64px, auto;
+		background-repeat: no-repeat;
+		background-position-x: right;
 	}
 	.kreatur.geist{
-		background-image: url(/assets/ilaris/kreaturentypen/geist.png) 0px 0px, linear-gradient(rgba(0,0,0,0) 64px, 65px, var(--IR_Beige));
+		background: url(/assets/ilaris/kreaturentypen/geist.png) 0px 0px, linear-gradient(rgba(0,0,0,0) 64px, 65px, var(--IR_Beige));
+		background-size: 64px, auto;
+		background-repeat: no-repeat;
+		background-position-x: right;
 	}
 	.kreatur.mythen{
-		background-image: url(/assets/ilaris/kreaturentypen/mythen.png) 0px 0px, linear-gradient(rgba(0,0,0,0) 64px, 65px, var(--IR_Beige));
+		background: url(/assets/ilaris/kreaturentypen/mythen.png) 0px 0px, linear-gradient(rgba(0,0,0,0) 64px, 65px, var(--IR_Beige));
+		background-size: 64px, auto;
+		background-repeat: no-repeat;
+		background-position-x: right;
 	}
 	.kreatur.untod{
-		background-image: url(/assets/ilaris/kreaturentypen/untod.png) 0px 0px, linear-gradient(rgba(0,0,0,0) 64px, 65px, var(--IR_Beige));
+		background: url(/assets/ilaris/kreaturentypen/untod.png) 0px 0px, linear-gradient(rgba(0,0,0,0) 64px, 65px, var(--IR_Beige));
+		background-size: 64px, auto;
+		background-repeat: no-repeat;
+		background-position-x: right;
 	}
 
 	//*****************************
