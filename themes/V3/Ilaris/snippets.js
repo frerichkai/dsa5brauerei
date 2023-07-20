@@ -107,7 +107,7 @@ module.exports = [
 				name: 'Bild',
 				icon: 'fas fa-image',
 				gen: dedent`
-					![Bierelementar](https://www.artstation.com/bernhard_eisner){width:300px,mix-blend-mode:multiply}`
+					![Bierelementar](https://brauerei.ilaris-online.de/assets/ilaris/lebewesen/baromna.png){width:300px,mix-blend-mode:multiply}`
 			},
 			{
 				name: 'Bild mit Credits',
@@ -117,7 +117,7 @@ module.exports = [
 
 					{{artist,position:relative,top:-230px,left:10px,margin-bottom:-30px
 					##### Elementar Baromna
-					[Bernahrd Eisner](https://www.artstation.com/bernhard_eisner)
+					[Bernhard Eisner](https://www.artstation.com/bernhard_eisner)
 					}}`
 			},
 			{
