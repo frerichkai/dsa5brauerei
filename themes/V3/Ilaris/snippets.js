@@ -492,19 +492,19 @@ module.exports = [
 				icon: 'fac book-back-cover',
 				gen: CoverPageGen.backTop,
 			},
+			// {
+			// 	name: "Dank und Copyright",
+			// 	icon: "fas fa-copyright",
+			// 	gen: dedent`
+			// 	#### Icons von [game-icons.net](https://game-icons.net/) unter [CC by 3.0](https://creativecommons.org/licenses/by/3.0/)
+			// 	Chess queen, Chess pawn, Chess knight, Open treasure chest von Skoll
+			// 	Feather, Compass, Medal skull, Locked fortress von Lorc
+			// 	Weight, Wheelbarrow von Delapouite
+			// 	Warlord helmet von Caro Asercion
+			// 	`
+			// },
 			{
-				name: "Dank und Copyright",
-				icon: "fas fa-copyright",
-				gen: dedent`
-				#### Icons von [game-icons.net](https://game-icons.net/) unter [CC by 3.0](https://creativecommons.org/licenses/by/3.0/)
-				Chess queen, Chess pawn, Chess knight, Open treasure chest von Skoll
-				Feather, Compass, Medal skull, Locked fortress von Lorc
-				Weight, Wheelbarrow von Delapouite
-				Warlord helmet von Caro Asercion
-				`
-			},
-			{
-				name: "Impressum und Copyright",
+				name: "Impressum",
 				icon: "fas fa-copyright",
 				gen: dedent`
 				{{keininhalt}}
