@@ -113,62 +113,62 @@ module.exports = [
 				gen  : WatercolorGen,
 			},
 			{
-				name         : 'Watercolor Center',
+				name         : 'Bildklecks Mitte',
 				icon         : 'fac mask-center',
 				gen          : ImageMaskGen.center,
 				experimental : true,
 			},
 			{
-				name         : 'Watercolor Edge',
+				name         : 'Bildklecks Rand',
 				icon         : 'fac mask-edge',
 				gen          : ImageMaskGen.edge('bottom'),
 				experimental : true,
 				subsnippets  : [
 					{
-						name : 'Top',
+						name : 'Oben',
 						icon : 'fac position-top',
 						gen  : ImageMaskGen.edge('top'),
 					},
 					{
-						name : 'Right',
+						name : 'Rechts',
 						icon : 'fac position-right',
 						gen  : ImageMaskGen.edge('right'),
 					},
 					{
-						name : 'Bottom',
+						name : 'Unten',
 						icon : 'fac position-bottom',
 						gen  : ImageMaskGen.edge('bottom'),
 					},
 					{
-						name : 'Left',
+						name : 'Links',
 						icon : 'fac position-left',
 						gen  : ImageMaskGen.edge('left'),
 					},
 				]
 			},
 			{
-				name         : 'Watercolor Corner',
+				name         : 'Bildklecks Ecke',
 				icon         : 'fac mask-corner',
 				gen          : ImageMaskGen.corner,
 				experimental : true,
 				subsnippets  : [
 					{
-						name : 'Top-Left',
+						name : 'Oben links',
 						icon : 'fac position-top-left',
 						gen  : ImageMaskGen.corner('top', 'left'),
 					},
 					{
-						name : 'Top-Right',
+						name : 'Oben rechts',
 						icon : 'fac position-top-right',
 						gen  : ImageMaskGen.corner('top', 'right'),
 					},
 					{
-						name : 'Bottom-Left',
+						name : 'Unten links',
 						icon : 'fac position-bottom-left',
 						gen  : ImageMaskGen.corner('bottom', 'left'),
 					},
 					{
-						name : 'Bottom-Right',
+						name : 'Unten rechts',
 						icon : 'fac position-bottom-right',
 						gen  : ImageMaskGen.corner('bottom', 'right'),
 					}

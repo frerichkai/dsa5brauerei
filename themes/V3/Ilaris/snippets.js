@@ -117,7 +117,7 @@ module.exports = [
 
 					{{artist,position:relative,top:-230px,left:10px,margin-bottom:-30px
 					##### Elementar Baromna
-					[Bernahrd Eisner](https://www.artstation.com/bernhard_eisner)
+					[Bernhard Eisner](https://www.artstation.com/bernhard_eisner)
 					}}`
 			},
 			{
