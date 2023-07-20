@@ -58,12 +58,12 @@ module.exports = [
 					`;
 				},
 			},
-			{
-				name: 'Index',
-				icon: 'fas fa-bars',
-				gen: indexGen,
-				experimental: true
-			}
+			// {
+			// 	name: 'Index',
+			// 	icon: 'fas fa-bars',
+			// 	gen: indexGen,
+			// 	experimental: true
+			// }
 		]
 	},
 	{
