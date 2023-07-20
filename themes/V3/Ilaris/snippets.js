@@ -98,18 +98,24 @@ module.exports = [
 				name: 'Bild',
 				icon: 'fas fa-image',
 				gen: dedent`
-					![cat warrior](https://s-media-cache-ak0.pinimg.com/736x/4a/81/79/4a8179462cfdf39054a418efd4cb743e.jpg) {width:325px,mix-blend-mode:multiply}
+					![Bierelementar](https://www.artstation.com/bernhard_eisner){width:300px,mix-blend-mode:multiply}`
+			},
+			{
+				name: 'Bild mit Credits',
+				icon: 'fas fa-image',
+				gen: dedent`
+					![Bierelementar](https://brauerei.ilaris-online.de/assets/ilaris/lebewesen/baromna.png) {width:300px,mix-blend-mode:multiply}
 
 					{{artist,position:relative,top:-230px,left:10px,margin-bottom:-30px
-					##### Cat Warrior
-					[Kyoung Hwan Kim](https://www.artstation.com/tahra)
+					##### Elementar Baromna
+					[Bernahrd Eisner](https://www.artstation.com/bernhard_eisner)
 					}}`
 			},
 			{
 				name: 'Hintergrundbild',
 				icon: 'fas fa-tree',
 				gen: dedent`
-					![homebrew mug](http://i.imgur.com/hMna6G0.png) {position:absolute,top:50px,right:30px,width:280px}
+					![Hintergrund](http://i.imgur.com/hMna6G0.png) {position:absolute,top:50px,right:30px,width:280px}
 
 					{{artist,top:80px,right:30px
 					##### Homebrew Mug
