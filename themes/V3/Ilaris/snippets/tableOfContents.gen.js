@@ -29,6 +29,9 @@ const getTOC = (pages)=>{
 
 	const res = [];
 	_.each(pages, (page, pageNum)=>{
+		if (page.indexOf("{{nocontent}}")>=0 || page.indexOf("{{keininhalt}}")>=0) {
+				return;
+		}
 		const lines = page.split('\n');
 		_.each(lines, (line)=>{
 			if(_.startsWith(line, '# ')){
@@ -75,6 +78,8 @@ module.exports = function(brew){
 	}, []).join('\n');
 
 	return dedent`
+		{{keininhalt}}
+		
 		{{toc,wide
 		# Inhalt
 

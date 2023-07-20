@@ -100,12 +100,14 @@ module.exports = {
 		  {{vorderseite}}
 		  {{dunkel}}
 
+		  {{keininhalt}}
+
 		  {{logo ![Ilaris Würfel-Logo](/assets/ilaris/logo/icon_rot.png)}}
 
 		  # ${_.sample(titles)}
 		  ## ${_.sample(subtitles)}
 
-		  ![Hintergrund](https://i.imgur.com/IwHRrbF.jpg){position:absolute,bottom:0,left:0,width:100%,height:100%}
+		  ![Hintergrund](/assets/ilaris/hintergruende/challenger.png){position:absolute,bottom:0,left:0,width:100%,height:100%}
 
 		  {{fusszeile 
 		    Ilaris - Schlanke Regeln für Aventurien
@@ -119,13 +121,15 @@ module.exports = {
 		return dedent`
 			{{vorderseite}}
 
+			{{keininhalt}}
+
 			{{logo ![Ilaris Würfel-Logo](/assets/ilaris/logo/icon_rot.png)}}
 
 			# ${_.sample(titles)}
 			## ${_.sample(subtitles)}
 
 			{{maske,mitte
-			  ![Hintegrund](https://i.imgur.com/IsfUnFR.jpg){width:100%,height:100%}
+			  ![Hintegrund](/assets/ilaris/hintergruende/challenger.png){width:100%,height:100%}
 			}}
 
 			{{fusszeile 
@@ -140,6 +144,8 @@ module.exports = {
 		return dedent`
 			\page
 			{{rueckseite}}
+
+			{{keininhalt}}
 
 			# ${_.sample(titles)}
 			:
@@ -180,6 +186,8 @@ module.exports = {
 		return dedent`
 			\page
 			{{rueckseite,oben}}
+
+			{{keininhalt}}
 
 			# ${_.sample(subtitles)}
 			:

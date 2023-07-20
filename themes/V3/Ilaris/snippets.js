@@ -50,6 +50,15 @@ module.exports = [
 				},
 			},
 			{
+				name: 'Nicht ins Inhaltsverzeichnis',
+				icon: 'fas fa-ban',
+				gen: function () {
+					return dedent`
+					{{keininhalt}}
+					`;
+				},
+			},
+			{
 				name: 'Index',
 				icon: 'fas fa-bars',
 				gen: indexGen,
@@ -464,6 +473,72 @@ module.exports = [
 				Feather, Compass, Medal skull, Locked fortress von Lorc
 				Weight, Wheelbarrow von Delapouite
 				Warlord helmet von Caro Asercion
+				`
+			},
+			{
+				name: "Impressum und Copyright",
+				icon: "fas fa-copyright",
+				gen: dedent`
+				{{keininhalt}}
+
+				# Impressum
+
+				![](/assets/ilaris/logo/icon_grau.png) {position:absolute,top:6.2cm,left:1.9cm,width:80%,mix-blend-mode:multiply,opacity:15%}
+
+				{{wide,width:80%,margin:auto
+				{{credit
+				## Text
+				Dein Name
+				::
+				## Veröffentlichung
+				${new Intl.DateTimeFormat('de', {day:'2-digit', month:'2-digit', year:'numeric'}).format(new Date())} / Version 1.0
+				::
+				## Illustrationen
+				Weitere Credits
+				::
+				## Lektorat
+				Person A und B
+				::
+				## Spieletests
+				Person A, B und C
+				::
+				## Kontakt
+				📧 beispiel@example.com
+				<br/>
+				![](/assets/discord.png) {width:14px} https://discordapp.com/users/DeineID
+				<br/>
+				🌐 https://brauerei.ilaris-online.de
+
+
+				::::::
+				## Disclaimer
+				::
+				#### Artwork © ${new Date().getFullYear()} Ulisses Spiele.  
+				DAS SCHWARZE AUGE, AVENTURIEN, DERE, MYRANOR, THARUN, UTHURIA, RIESLAND 
+				und THE DARK EYE sind eingetragene Marken der Ulisses Spiele GmbH, Waldems. 
+				Die Verwendung der Grafiken erfolgt unter den von Ulisses Spiele erlaubten Richtlinien. 
+				Eine Verwendung über diese Richtlinien hinaus darf nur nach vorheriger schriftlicher 
+				Genehmigung der Ulisses Medien und Spiel Distribution GmbH erfolgen.
+				}}
+				::
+				{{zentriert
+				#### Icons von [game-icons.net](https://game-icons.net/) unter [CC by 3.0](https://creativecommons.org/licenses/by/3.0/)
+				Chess queen, Chess pawn, Chess knight, Open treasure chest von Skoll
+				Feather, Compass, Medal skull, Locked fortress von Lorc
+				Weight, Wheelbarrow von Delapouite
+				Warlord helmet von Caro Asercion
+				::
+				#### Illustrationen
+				Ilaris-Grafiken: Copyright [Bernhard Eisner](https://bernhard_eisner.artstation.com/)  
+				Cover-Artwork: Copyright <a href="https://www.freepik.com/free-photo/angel-quiet-primeval-forest-digital-painting_15174520.htm">Image by liuzishan</a> on Freepik  
+				::
+				#### Layout und Dokument-Generierung
+				https://brauerei.ilaris-online.de
+				}}
+
+				}}
+
+				\page
 				`
 			},
 			{
