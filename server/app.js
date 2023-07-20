@@ -260,7 +260,7 @@ app.get('/new/:id', asyncHandler(getBrew('share')), (req, res, next)=>{
 	splitTextStyleAndMetadata(req.brew);
 	const brew = {
 		shareId  : req.brew.shareId,
-		title    : `CLONE - ${req.brew.title}`,
+		title    : `KOPIE - ${req.brew.title}`,
 		text     : req.brew.text,
 		style    : req.brew.style,
 		renderer : req.brew.renderer,
