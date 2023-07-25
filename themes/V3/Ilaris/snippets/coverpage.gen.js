@@ -107,7 +107,7 @@ module.exports = {
 		  # ${_.sample(titles)}
 		  ## ${_.sample(subtitles)}
 
-		  ![Hintergrund](/assets/ilaris/hintergruende/challenger.png){position:absolute,bottom:0,left:0,width:100%,height:100%}
+		  {{vollbild ![Hintergrund](/assets/ilaris/hintergruende/challenger.png)}}
 
 		  {{fusszeile 
 		    Ilaris - Schlanke Regeln für Aventurien
@@ -201,11 +201,11 @@ module.exports = {
 			{{wide,width:50%,position:absolute,bottom:10px,left:1.5cm
 			##### Auf einen Blick
 			| | | | | |
-			|:-----|:-:|:-:|:-:|:-:|
+			|:----------------------|:--:|:--:|:--:|:--:|
 			| Genre                 | Attentat, Rätsel ||||
-			| Ort                 | Beliebig ||||
-			| Zeit                 | Beliebig ||||
-			| Benötigt                 | Ilaris GRW ||||
+			| Ort                   | Beliebig ||||
+			| Zeit                  | Beliebig ||||
+			| Benötigt              | Ilaris GRW ||||
 			| Komplexität Spieler   | {{punkt,voll}} | {{punkt,leer}} | {{punkt,leer}} | {{punkt,leer}} |
 			| Komplexität Meister   | {{punkt,voll}} | {{punkt,voll}} | {{punkt,leer}} | {{punkt,leer}} |
 			| Erfahrungsgrad        | {{punkt,voll}} | {{punkt,voll}} | {{punkt,voll}} | {{punkt,leer}} |

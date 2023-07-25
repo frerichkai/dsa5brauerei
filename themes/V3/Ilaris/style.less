@@ -212,7 +212,12 @@ body {
 	}
 
 	img {
-		z-index: -1;
+		z-index: -1;    
+		display: block;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		mix-blend-mode: multiply;
 	}
 
 	strong {
@@ -372,61 +377,61 @@ body {
 		display: inline-block;
 		width: 1em;
 		height: 1em;
-		// background-image: url(/assets/ilaris/icons/chess-pawn.svg);
+		// background-image: url(/assets/ilaris/game_icons/chess-pawn.svg);
 		// filter: brightness(0.5) sepia(1) hue-rotate(-70deg) saturate(5);
 		-webkit-mask-size: cover;
 		mask-size: cover;
 		background-color: black;
-		-webkit-mask: url(/assets/ilaris/icons/chess-pawn.svg) no-repeat 100% 100%;
-		mask: url(/assets/ilaris/icons/chess-pawn.svg) no-repeat 100% 100%;
+		-webkit-mask: url(/assets/ilaris/game_icons/chess-pawn.svg) no-repeat 100% 100%;
+		mask: url(/assets/ilaris/game_icons/chess-pawn.svg) no-repeat 100% 100%;
 
 	}
 
 	.symbol.koenig,
 	.symbol.koenigin,
 	.symbol.queen {
-		-webkit-mask: url(/assets/ilaris/icons/chess-queen.svg) no-repeat 100% 100%;
-		// mask: url(/assets/ilaris/icons/chess-queen.svg) no-repeat 100% 100%;
+		-webkit-mask: url(/assets/ilaris/game_icons/chess-queen.svg) no-repeat 100% 100%;
+		// mask: url(/assets/ilaris/game_icons/chess-queen.svg) no-repeat 100% 100%;
 	}
 
 	.symbol.springer,
 	.symbol.pferd,
 	.symbol.knight {
-		-webkit-mask: url(/assets/ilaris/icons/chess-knight.svg) no-repeat 100% 100%;
+		-webkit-mask: url(/assets/ilaris/game_icons/chess-knight.svg) no-repeat 100% 100%;
 	}
 
 	.symbol.bauer {
-		-webkit-mask: url(/assets/ilaris/icons/chess-pawn.svg) no-repeat 100% 100%;
+		-webkit-mask: url(/assets/ilaris/game_icons/chess-pawn.svg) no-repeat 100% 100%;
 	}
 
 	.symbol.leicht,
 	.symbol.feder {
-		-webkit-mask: url(/assets/ilaris/icons/feather.svg) no-repeat 100% 100%;
+		-webkit-mask: url(/assets/ilaris/game_icons/feather.svg) no-repeat 100% 100%;
 	}
 
 	.symbol.schwer,
 	.symbol.medalie {
-		-webkit-mask: url(/assets/ilaris/icons/medal-skull.svg) no-repeat 100% 100%;
+		-webkit-mask: url(/assets/ilaris/game_icons/medal-skull.svg) no-repeat 100% 100%;
 	}
 
 	.symbol.helm {
-		-webkit-mask: url(/assets/ilaris/icons/warlord-helmet.svg) no-repeat 100% 100%;
+		-webkit-mask: url(/assets/ilaris/game_icons/warlord-helmet.svg) no-repeat 100% 100%;
 	}
 
 	.symbol.schubkarre {
-		-webkit-mask: url(/assets/ilaris/icons/wheelbarrow.svg) no-repeat 100% 100%;
+		-webkit-mask: url(/assets/ilaris/game_icons/wheelbarrow.svg) no-repeat 100% 100%;
 	}
 
 	.symbol.kompass {
-		-webkit-mask: url(/assets/ilaris/icons/compass.svg) no-repeat 100% 100%;
+		-webkit-mask: url(/assets/ilaris/game_icons/compass.svg) no-repeat 100% 100%;
 	}
 
 	.symbol.schatz {
-		-webkit-mask: url(/assets/ilaris/icons/open-treasure-chest.svg) no-repeat 100% 100%;
+		-webkit-mask: url(/assets/ilaris/game_icons/open-treasure-chest.svg) no-repeat 100% 100%;
 	}
 
 	.symbol.turm {
-		-webkit-mask: url(/assets/ilaris/icons/locked-fortress.svg) no-repeat 100% 100%;
+		-webkit-mask: url(/assets/ilaris/game_icons/locked-fortress.svg) no-repeat 100% 100%;
 	}
 
 	.symbol.gruen {
@@ -1522,6 +1527,18 @@ body {
 
 		img {
 			height: 3cm;
+			width: auto;
+		}
+	}
+
+	.vollbild {
+		img {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			mix-blend-mode: unset;
 		}
 	}
 }
