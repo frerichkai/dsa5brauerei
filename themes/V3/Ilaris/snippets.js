@@ -271,7 +271,7 @@ module.exports = [
 			{
 				name: 'Zauber',
 				icon: 'fas fa-magic',
-				gen: MagicGen.spell,
+				gen: MagicGen.zauber,
 			},
 			{
 				name: 'Notiz',
