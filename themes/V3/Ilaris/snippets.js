@@ -592,8 +592,7 @@ module.exports = [
 					return dedent`
 						\page
 						{{kopfzeile Karten}}
-						{{karten}}
-						{{keinhintergrund}}
+						{{karten,keinhintergrund}}
 			
 						{{karte,schwarz
 						#### Randfarben
@@ -657,7 +656,7 @@ module.exports = [
 						Text...
 						
 						##### Tabelle auf Karte
-						| Spezies | Hintergrund | Fähigkeiten |
+						| Spezies | Rolle | Fähigkeiten |
 						|:------------------|:-----:|:-----------------:|
 						| Menschen                 | Krieger     | Schwertkampf, Taktik, Ausdauer                |
 						| Elfen               | Magier     | Elementarmagie, Heilung, Illusion                |
