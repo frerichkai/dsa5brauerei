@@ -50,6 +50,11 @@ module.exports = [
 					\n`
 			},
 			{
+				name : 'Dreispaltig',
+				icon : 'fas fa-bars rotate90',
+				gen  : ' {{dreispaltig}} '
+			},
+			{
 				name : 'Linksbündig',
 				icon : 'fas fa-align-left',
 				gen  : ' {{linksbuendig Dies steht links}} '
