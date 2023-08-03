@@ -434,6 +434,102 @@ body {
 		-webkit-mask: url(/assets/ilaris/game_icons/locked-fortress.svg) no-repeat 100% 100%;
 	}
 
+	.symbol.flaeche,
+	.symbol.zone {
+		-webkit-mask: url(/assets/ilaris/game_icons/area-floor-sice-icon.svg) no-repeat 100% 100%;
+	}
+
+	.symbol.knochen,
+	.symbol.knochenkeule {
+		-webkit-mask: url(/assets/ilaris/game_icons/bone-mace.svg) no-repeat 100% 100%;
+	}
+
+	.symbol.kralle,
+	.symbol.chimaere,
+	.symbol.materialchimaere {
+		-webkit-mask: url(/assets/ilaris/game_icons/bird-claw.svg) no-repeat 100% 100%;
+	}
+
+	.symbol.aas,
+	.symbol.untot,
+	.symbol.materialuntot {
+		-webkit-mask: url(/assets/ilaris/game_icons/carrion.svg) no-repeat 100% 100%;
+	}
+	
+	.symbol.kessel,
+	.symbol.alchemie,
+	.symbol.schalederalchemie {
+		-webkit-mask: url(/assets/ilaris/game_icons/cauldron.svg) no-repeat 100% 100%;
+	}
+	
+	.symbol.glaskugel,
+	.symbol.kristallkugel {
+		-webkit-mask: url(/assets/ilaris/game_icons/crystal-ball.svg) no-repeat 100% 100%;
+	}
+
+	.symbol.dolch,
+	.symbol.ritualgegenstand {
+		-webkit-mask: url(/assets/ilaris/game_icons/curvy-knive.svg) no-repeat 100% 100%;
+	}
+
+	.symbol.djinn,
+	.symbol.elementar {
+		-webkit-mask: url(/assets/ilaris/game_icons/djinn.svg) no-repeat 100% 100%;
+	}
+
+	.symbol.loewe {
+		-webkit-mask: url(/assets/ilaris/game_icons/lion.svg) no-repeat 100% 100%;
+	}
+
+	.symbol.harfe,
+	.symbol.iama {
+		-webkit-mask: url(/assets/ilaris/game_icons/lyre.svg) no-repeat 100% 100%;
+	}
+
+	.symbol.ich,
+	.symbol.selbst {
+		-webkit-mask: url(/assets/ilaris/game_icons/noun-me-4660321.svg) no-repeat 100% 100%;
+	}
+
+	.symbol.schlange,
+	.symbol.schlangenreif {
+		-webkit-mask: url(/assets/ilaris/game_icons/ouroboros.svg) no-repeat 100% 100%;
+	}
+
+	.symbol.gift {
+		-webkit-mask: url(/assets/ilaris/game_icons/poison-bottle.svg) no-repeat 100% 100%;
+	}
+
+	.symbol.golem {
+		-webkit-mask: url(/assets/ilaris/game_icons/rock-golem.svg) no-repeat 100% 100%;
+	}
+
+	.symbol.skorpion {
+		-webkit-mask: url(/assets/ilaris/game_icons/scorpion-tail.svg) no-repeat 100% 100%;
+	}
+
+	.symbol.geist {
+		-webkit-mask: url(/assets/ilaris/game_icons/spectre.svg) no-repeat 100% 100%;
+	}
+
+	.symbol.sack,
+	.symbol.schuppenbeutel {
+		-webkit-mask: url(/assets/ilaris/game_icons/swap-bag.svg) no-repeat 100% 100%;
+	}
+
+	.symbol.werkzeug {
+		-webkit-mask: url(/assets/ilaris/game_icons/toolbox.svg) no-repeat 100% 100%;
+	}
+
+	.symbol.voodoo {
+		-webkit-mask: url(/assets/ilaris/game_icons/voodoo-doll.svg) no-repeat 100% 100%;
+	}
+
+	.symbol.stab {
+		-webkit-mask: url(/assets/ilaris/game_icons/wizard-staff.svg) no-repeat 100% 100%;
+	}
+
+
 	.symbol.gruen {
 		background-color: darkgreen;
 	}
@@ -445,6 +541,40 @@ body {
 	// .symbol.custom {
 	// 	-webkit-mask: url(var(--url)) no-repeat 100% 100%;
 	// }
+
+	// fonta-awesome-icons
+	.fa-symbol {
+		background: none;
+		mask: none;
+
+		&::before {
+			font-size: 7pt;
+			font-weight: 400;
+			font-family: "Font Awesome";
+		}
+
+	}
+
+	.symbol.person {.fa-symbol(); &::before{ content: "\f183";}}
+	.symbol.dereweit {.fa-symbol(); &::before{ content: "\f0ac";}}
+	.symbol.aventurienweit {.fa-symbol(); &::before{ content: "\f0ac";}}
+	.symbol.elixier {.fa-symbol(); &::before{ content: "\f0c3";}}
+	.symbol.bisbindunggeloest {.fa-symbol(); &::before{ content: "\f127";}}
+	.symbol.tier {.fa-symbol(); &::before{ content: "\f1b0";}}
+	.symbol.lebensjahr {.fa-symbol(); &::before{ content: "\f1fd";}}
+	.symbol.initiativephasen {.fa-symbol(); &::before{ content: "\f2f9";}}
+	.symbol.beruehrung {.fa-symbol(); &::before{ content: "\f256";}}
+	.symbol.gebundenerkristall {.fa-symbol(); &::before{ content: "\f3a5";}}
+	.symbol.teilobjekt {.fa-symbol(); &::before{ content: "\f466";}}
+	.symbol.einzelobjekt {.fa-symbol(); &::before{ content: "\f468";}}
+	.symbol.pflanze {.fa-symbol(); &::before{ content: "\f4d8";}}
+	.symbol.hexenbesen {.fa-symbol(); &::before{ content: "\f51a";}}
+	.symbol.permanent {.fa-symbol(); &::before{ content: "\f534";}}
+	.symbol.biszu {.fa-symbol(); &::before{ content: "\f537";}}
+	.symbol.vertrautentier {.fa-symbol(); &::before{ content: "\f6be";}}
+	.symbol.zauber {.fa-symbol(); &::before{ content: "\f72b";}}
+	.symbol.waehlbar, .symbol.variabel{.fa-symbol(); &::before{ content: "\f83e";}}
+
 	.card,
 	.karte {
 		width: 2.5in;
@@ -456,8 +586,8 @@ body {
 		background-size: 100% 100%;
 		border: 4px solid rgb(255, 255, 255);
 		position: relative;
-
-		//font-size: 10px;
+		font-size: 11px;
+		
 		img {
 			max-width: 100%;
 			max-height: 100%;
@@ -500,10 +630,25 @@ body {
 			}
 		}
 
+		&.sehrkleinertitel,
+		&.verysmalltitle {
+			h4,
+			h5 {
+				font-size: 0.3cm;
+			}
+		}
+
 		&.kleinertext,
 		&.smalltext {
 			p {
 				font-size: 0.29cm;
+			}
+		}
+
+		&.sehrkleinertext,
+		&.verysmalltext {
+			p {
+				font-size: 0.22cm;
 			}
 		}
 	}
@@ -1257,6 +1402,224 @@ body {
 	}
 
 	.karte {
+		.symbole {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			// transform: translate(-50%, 0);  // expand in both directions
+			width: fit-content;
+			height: auto;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			
+			padding-left: 2px;
+			padding-right: 2px;
+
+			background: #DED5BFdd;
+			border-bottom-right-radius: 2px;
+			border-left: 1px solid #000000aa;
+			border-right: 1px solid #000000aa;
+			border-bottom: 1px solid #000000aa;
+			box-shadow: 0 0.2em 0.3em rgba(0,0,0,0.4);
+
+            // display: table;
+            // text-align: right;
+			.p {
+				display: inline;
+			}
+		}
+
+		.statsymbol {
+			margin-left: 5px;
+			padding-top: 1px;
+			
+			&:first{
+				padding-left: 0px;
+			}
+
+			&::before{
+				text-align: center;
+				display: inline-block;
+				background: radial-gradient(circle at center, #654510 0%,#654510 60%,rgba(0, 0, 0, 0) 65%,rgba(80, 80, 80, 0) 100%);
+				line-height: 1.6;
+				height: 15px;
+				font-family: "Font Awesome 5 Free";
+				width: 15px;
+				font-size: 7pt;
+				margin-right: 3px;
+				font-weight: 900;
+				font-style: normal;
+				font-variant: normal;
+				color: #DED5BF;
+				-webkit-text-stroke: 0.5px #654510;
+			}
+		}
+
+		.reichweite {
+			.statsymbol();
+			&::before {
+				content: "\f545";
+			}
+		}
+
+		.ziel {
+			.statsymbol();
+			&::before {
+				content: "\f140";
+			}
+		}
+
+		.vorbereitung,
+		.vorbeireitungszeit {
+			.statsymbol();
+			&::before {
+				content: "\f254";
+			}
+		}
+        
+		.wirkung,
+		.wirkungsdauer {
+			.statsymbol();
+			&::before {
+				content: "\f2f2";
+			}
+		}
+
+		.kosten {
+			.statsymbol();
+			&::before {
+				content: "\f0e7";
+			}
+		}
+
+		// copy from manoever plugin
+        // .statcontent
+        // {
+        //     font-size: 7pt;
+        //     display: inline-flex;
+        //     flex-direction: row;
+        //     height: 1.0em;
+        //     vertical-align: middle;
+        // }
+        
+        // .statcontent img
+        // {
+        //     height: 1.1em;
+        //     width: auto;
+        //     display: inline;
+        //     margin: 0;
+        //     position: relative;
+        //     top: -0.05em;
+        // }
+        
+        // .statcontent span
+        // {
+        //     font-family: FontAwesome;
+        //     font-weight: 900;
+        //     -webkit-text-stroke: 0.5px #DED5BFdd; /* improve icon readbility */
+        // }
+
+
+
+		.fertigkeiten {
+            position: absolute;
+            bottom: 0px;
+			left:0px;
+			right: 0px;
+			margin-left: auto;
+			margin-right: auto;
+			width: fit-content;
+            height: 22px;
+
+            padding-left: 4px;
+            padding-right: 4px;
+            padding-top: 1px;
+            padding-bottom: 1px;
+
+            background: url(/assets/ilaris/layout/kasten_2_lq.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%; 
+
+
+            display: flex;
+            align-items: center;
+            column-gap: 4px;
+            justify-content: space-between;
+            text-align: center;
+            clip-path: inset(0px 0px 1px 0px);
+
+			//assets\ilaris\fertigkeiten_magie
+        }
+
+		.fertigkeit {
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			width: 20px;
+			height: 20px;
+
+			&.feuer{background-image: url(/assets/ilaris/fertigkeiten_magie/feuer.png);}
+			&.eis{background-image: url(/assets/ilaris/fertigkeiten_magie/eis.png);}
+			&.antimagie{background-image: url(/assets/ilaris/fertigkeiten_magie/antimagie.png);}
+			&.daemonisch{background-image: url(/assets/ilaris/fertigkeiten_magie/daemonisch.png);}
+			&.eigenschaften{background-image: url(/assets/ilaris/fertigkeiten_magie/eigenschaften.png);}
+			&.einfluss{background-image: url(/assets/ilaris/fertigkeiten_magie/einfluss.png);}
+			&.erz{background-image: url(/assets/ilaris/fertigkeiten_magie/erz.png);}
+			&.hellsicht{background-image: url(/assets/ilaris/fertigkeiten_magie/hellsicht.png);}
+			&.humus{background-image: url(/assets/ilaris/fertigkeiten_magie/humus.png);}
+			&.illusion{background-image: url(/assets/ilaris/fertigkeiten_magie/illusion.png);}
+			&.kraft{background-image: url(/assets/ilaris/fertigkeiten_magie/kraft.png);}
+			&.luft{background-image: url(/assets/ilaris/fertigkeiten_magie/luft.png);}
+			&.temporal{background-image: url(/assets/ilaris/fertigkeiten_magie/temporal.png);}
+			&.umwelt{background-image: url(/assets/ilaris/fertigkeiten_magie/umwelt.png);}
+			&.verstaendigung{background-image: url(/assets/ilaris/fertigkeiten_magie/verstaendigung.png);}
+			&.verwandlung{background-image: url(/assets/ilaris/fertigkeiten_magie/verwandlung.png);}
+			&.wasser{background-image: url(/assets/ilaris/fertigkeiten_magie/wasser.png);}
+
+			&.zwoelf{background-image: url(/assets/ilaris/fertigkeiten_karma/zwoelf.png);}
+			&.ehre{background-image: url(/assets/ilaris/fertigkeiten_karma/ehre.png);}
+			&.kerz{background-image: url(/assets/ilaris/fertigkeiten_karma/erz.png);}
+			&.kfeuer{background-image: url(/assets/ilaris/fertigkeiten_karma/feuer.png);}
+			&.friede{background-image: url(/assets/ilaris/fertigkeiten_karma/friede.png);}
+			&.froehlicherwanderer{background-image: url(/assets/ilaris/fertigkeiten_karma/froehlicher_wanderer.png);}
+			&.guterkampf{background-image: url(/assets/ilaris/fertigkeiten_karma/guter_kampf.png);}
+			&.gutesgold{background-image: url(/assets/ilaris/fertigkeiten_karma/gutes_gold.png);}
+			&.handwerk{background-image: url(/assets/ilaris/fertigkeiten_karma/handwerk.png);}
+			&.harmonie{background-image: url(/assets/ilaris/fertigkeiten_karma/harmonie.png);}
+			&.heerfuehrung{background-image: url(/assets/ilaris/fertigkeiten_karma/heerfuehrung.png);}
+			&.heilung{background-image: url(/assets/ilaris/fertigkeiten_karma/heilung.png);}
+			&.heimundherd{background-image: url(/assets/ilaris/fertigkeiten_karma/heim_und_herd.png);}
+			&.jagd{background-image: url(/assets/ilaris/fertigkeiten_karma/jagd.png);}
+			&.lehre{background-image: url(/assets/ilaris/fertigkeiten_karma/lehre.png);}
+			&.licht{background-image: url(/assets/ilaris/fertigkeiten_karma/licht.png);}
+			&.list{background-image: url(/assets/ilaris/fertigkeiten_karma/list.png);}
+			&.mada{background-image: url(/assets/ilaris/fertigkeiten_karma/mada.png);}
+			&.magie{background-image: url(/assets/ilaris/fertigkeiten_karma/magie.png);}
+			&.magiebann{background-image: url(/assets/ilaris/fertigkeiten_karma/magiebann.png);}
+			&.neubeginn{background-image: url(/assets/ilaris/fertigkeiten_karma/neubeginn.png);}
+			&.ordnung{background-image: url(/assets/ilaris/fertigkeiten_karma/ordnung.png);}
+			&.quellen{background-image: url(/assets/ilaris/fertigkeiten_karma/quellen.png);}
+			&.rausch{background-image: url(/assets/ilaris/fertigkeiten_karma/rausch.png);}
+			&.schatten{background-image: url(/assets/ilaris/fertigkeiten_karma/schatten.png);}
+			&.schlaf{background-image: url(/assets/ilaris/fertigkeiten_karma/schlaf.png);}
+			&.schutz{background-image: url(/assets/ilaris/fertigkeiten_karma/schutz.png);}
+			&.seefahrt{background-image: url(/assets/ilaris/fertigkeiten_karma/seefahrt.png);}
+			&.sichereheimkehr{background-image: url(/assets/ilaris/fertigkeiten_karma/sichere_heimkehr.png);}
+			&.stillerwanderer{background-image: url(/assets/ilaris/fertigkeiten_karma/stiller_wanderer.png);}
+			&.tod{background-image: url(/assets/ilaris/fertigkeiten_karma/tod.png);}
+			&.vergessen{background-image: url(/assets/ilaris/fertigkeiten_karma/vergessen.png);}
+			&.wachstum{background-image: url(/assets/ilaris/fertigkeiten_karma/wachstum.png);}
+			&.wildnis{background-image: url(/assets/ilaris/fertigkeiten_karma/wildnis.png);}
+			&.winter{background-image: url(/assets/ilaris/fertigkeiten_karma/winter.png);}
+			&.wissen{background-image: url(/assets/ilaris/fertigkeiten_karma/wissen.png);}
+			&.wogen{background-image: url(/assets/ilaris/fertigkeiten_karma/wogen.png);}
+
+			.p {
+				display: inline;
+			}
+		}
+
 		.tradition {
 			// display: inline-block;
 			float: right;
@@ -1318,6 +1681,15 @@ body {
 		.tradition.ztz {
 			background-image: url(/assets/ilaris/traditionen/ztz.png);
 		}
+	
+		dl+* {
+			margin-top: 0.17cm;
+		}
+	
+		p+dl {
+			margin-top: 0.17cm;
+		}
+	
 	}
 }
 
@@ -1888,7 +2260,7 @@ body {
 // *****************************/
 .page {
 	dl {
-		line-height: 1.25em;
+		// line-height: 1.25em;
 		padding-left: 1em;
 		white-space: pre-line;
 

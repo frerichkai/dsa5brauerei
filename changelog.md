@@ -6,6 +6,8 @@ Wir betreiben nur den Ilaris-Fork des eigentlich englischsprachigen, auf DnD aus
 ### V0.2
 - Default für Bilder: Zeilenbreite und blend-mode: multiply
 - Vollbild Klasse, zB für A4 Hintergrundbilder
+- Symbolleisten und Fertigkeitenbilder für Zauber- und Liturgiekarten
+- Zusätzliche Symbole und Font-Awesome Icons
 
 ### V0.1
 ##### Layout
