@@ -6,7 +6,7 @@ Die DSA5-Brauerei soll ein einfacher Webeditor zum Erstellen von Rollenspiel-Pub
 
 Für die DSA5-Brauerei existiert noch keine eigene gehostete Version, sodass ihr sie auf eurem eigenen Rechner laufen lassen müsst. Eine Anleitung, wie man die Brauerei lokal ausführt und wie man sie modifizieren kann, findest Du in dieser Folge der [SchelmSchau](https://youtu.be/Jj5S6jwzf1Y). Dieses Repository ist aus besagter SchelmSchau hervorgegangen.
 
-Um Dokumente im Stil von DSA5-Publikationen erzeugen zu können, werden noch die Grafiken aus dem Scriptoriums-Paket benötigt. Diese können aus Copyright-Gründen nicht hier im Repository gespeichert werden. Die fehlenden Grafiken können hier heruntergeladen werden: https://www.ulisses-ebooks.de/product/197880/Scriptorium-Aventuris--LayoutBaukasten
+Um Dokumente im Stil von DSA5-Publikationen erzeugen zu können, werden noch die Grafiken aus dem Scriptoriums-Paket benötigt. Diese können aus Copyright-Gründen nicht hier im Repository gespeichert werden. Die fehlenden Grafiken können aus dem [Layout-Baukasten im Scriptorium Aventuris](https://www.ulisses-ebooks.de/product/197880/Scriptorium-Aventuris--LayoutBaukasten) heruntergeladen werden.
 
 Kopiere alle .png-Dateien aus dem Verzeichnis ***/Scriptorium Aventuris v4/PNG innen*** in das Verzeichnis ***/themes/assets/dsa5***
 
