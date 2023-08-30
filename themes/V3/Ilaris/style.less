@@ -150,10 +150,9 @@ body {
 	height: @dina4Height;
 
 	background-color: var(--HB_Color_Background);
-	background-image: url('/assets/dsa5/Doppelseite2_A4_scriptorium_3mm.jpg');
-	background-size: cover;
-	padding: 2.46cm 1.7cm 2.4cm 2.4cm;
-	font-family: "Gentium Book Basic";
+	background-image: @backgroundImage;
+	padding: 1.7cm 1.9cm 1.7cm;
+	font-family: CrimsonProMedium;
 	font-size: 0.35cm;
 	text-rendering: optimizeLegibility;
 	page-break-before: always;
@@ -165,7 +164,6 @@ body {
 // *****************************/
 .page {
 	p {
-		text-align: justify;
 		overflow-wrap: break-word; //TODO: MAKE ALL MARGINS TOP-ONLY. USE * + * STYLE SELECTORS
 		display: block;
 		line-height: 1.25em;
@@ -192,7 +190,7 @@ body {
 		// margin: 0;
 		padding-left: 22px;
 		list-style: none;
-		background-image: url("/assets/dsa5/Aufzaehlungszeichen Kopie.png");
+		background-image: url("/assets/ilaris/stichpunkt.png");
 		background-repeat: no-repeat;
 		background-position: left 4px;
 		background-size: 10px;
@@ -210,7 +208,7 @@ body {
 	p+p,
 	ul+p,
 	ol+p {
-		//text-indent: 1em;
+		text-indent: 1em;
 	}
 
 	img {
@@ -247,19 +245,18 @@ body {
 	// *           HEADERS
 	// *****************************/
 	h1 {
-		font-family: "Andalus";
+		font-family: Aniron;
 		font-weight: 800;
-		font-size: 23.5pt;
-		color: black
+		color: var(--HB_Color_HeaderText);
 	}
 
 	h2,
 	h3,
 	h4,
 	h5 {
-		font-family: "Gentium Book Basic";
+		font-family: Cinzel;
 		font-weight: 800;
-		color: black;
+		color: var(--HB_Color_HeaderText);
 
 		.symbol {
 			background-color: var(--HB_Color_HeaderText);
@@ -274,21 +271,14 @@ body {
 		margin-left: auto;
 		margin-right: auto;
 		min-width: min-content;
-		background-image: url("/assets/dsa5/DSA5-Kapitelstart-Banner Kopie.png");
-		background-size: 21cm;
-		margin-bottom: 0.18cm;
+
+
+		margin-bottom: 0.18cm; //Margin-bottom only because this is WIDE
 		column-span: all;
-		font-size: .89cm;
+		font-size: 0.89cm;
 		line-height: 1.4em;
 		-webkit-column-span: all;
-		position: relative;
-		left: -2cm;
-		width: 21cm;
-		max-width: 21cm;
-		max-height: 4.3cm;
-		height: 4.3cm;
-		padding: 1.7cm 2cm;
-
+		-moz-column-span: all;
 		/*
 		&+p::first-letter{
 			float                   : left;
@@ -311,40 +301,40 @@ body {
 		*/
 	}
 
-	//h1::before {
-	//	content: url('/assets/dsa5/DSA5-Kapitelstart-Banner Kopie.png');
-	//	//top: 7px;
-	//	position: relative;
-	//	right: 10px;
-	//	vertical-align: middle;
-	//	margin-top: auto;
-	//	margin-bottom: auto;
-	//	padding-top: 10px
-	//}
+	h1::before {
+		content: url('/assets/ilaris/kapitel-kurz-links-40-75.png');
+		//top: 7px;
+		position: relative;
+		right: 10px;
+		vertical-align: middle;
+		margin-top: auto;
+		margin-bottom: auto;
+		padding-top: 10px
+	}
 
-	//	h1::after {
-	//		content: url('/assets/ilaris/kapitel-kurz-rechts-40-75.png');
-	//		//top: 7px;
-	//		position: relative;
-	//		left: 10px;
-	//		vertical-align: middle;
-	//		margin-top: auto;
-	//		margin-bottom: auto;
-	//		padding-top: 10px
-	//	}
+	h1::after {
+		content: url('/assets/ilaris/kapitel-kurz-rechts-40-75.png');
+		//top: 7px;
+		position: relative;
+		left: 10px;
+		vertical-align: middle;
+		margin-top: auto;
+		margin-bottom: auto;
+		padding-top: 10px
+	}
 
 	h2 {
 		//margin-top    : 0px; //Font is misaligned. Shift up slightly
 		//margin-bottom : 0.05cm;
-		font-size: 13pt;
+		font-size: 0.60cm;
 		line-height: 0.988em; //Font is misaligned. Shift up slightly
 	}
 
 	h3 {
 		//margin-top    : -0.1cm; //Font is misaligned. Shift up slightly
 		//margin-bottom : 0.1cm;
-		font-size: 11pt;
-		//border-bottom: 2px solid var(--HB_Color_HeaderUnderline);
+		font-size: 0.5cm;
+		border-bottom: 2px solid var(--HB_Color_HeaderUnderline);
 		line-height: 0.995em; //Font is misaligned. Shift up slightly
 
 		&+* {
@@ -721,18 +711,16 @@ body {
 
 	.note,
 	.notiz {
-		//.useSansSerif();
-		//background-color: var(--HB_Color_Accent);
-		//border-style: solid;
-		//border-width: 1px;
-		//border-image: @noteBorderImage 12 stretch;
-		//border-image-outset: 9px 0px;
-		//border-image-width: 11px;
-		padding: .3cm .7cm .5cm .7cm;
-		//box-shadow: 1px 4px 14px #888;
-		background-image: url("/assets/dsa5/Kasten_Pergament_ver3 Kopie.png");
-		background-size: 105% 105%;
-		background-position: -0.2cm -0.2cm;
+		.useSansSerif();
+		background-color: var(--HB_Color_Accent);
+		border-style: solid;
+		border-width: 1px;
+		border-image: @noteBorderImage 12 stretch;
+		border-image-outset: 9px 0px;
+		border-image-width: 11px;
+		padding: 0.13cm 0.16cm;
+		box-shadow: 1px 4px 14px #888;
+
 		.page :where(&) {
 			margin-top: 9px; //Prevent top border getting cut off on colbreak
 		}
@@ -755,46 +743,16 @@ body {
 		}
 	}
 
-	.textbox::before {
-		display: inline-block;
-		width: calc(100% + 1.6cm);
-		height: 20px;
-		content: "";
-		background-image: url("/assets/dsa5/Absatztrenner_oben Kopie.png");
-		height: 0.8cm;
-		background-position: -0.5cm -0.4cm;
-		background-width: 4cm;
-		background-size: cover;
-		margin: 0 -3mm 0 -3mm;
-	}
-
-	.textbox::after {
-		display: inline-block;
-		width: calc(100% + 1.6cm);
-		height: 20px;
-		content: "";
-		background-image: url("/assets/dsa5/Absatztrenner_unten Kopie.png");
-		height: 0.8cm;
-		background-position: -0.5cm -0.4cm;
-		background-width: 4cm;
-		background-size: cover;
-		margin: 0 -3mm 0 -3mm;
-	}
-
-	.textbox * {
-		font-style: italic;
-	}
-
 	.descriptive,
 	.textbox {
-		//.useSansSerif();
-		//background-color: #faf7ea;
-		//border-style: solid;
-		//border-width: 7px;
-		//border-image: @descriptiveBoxImage 12 stretch;
-		//border-image-outset: 4px;
-		padding: 0 3mm 0 3mm;
-		//box-shadow: 0 0 6px #faf7ea;
+		.useSansSerif();
+		background-color: #faf7ea;
+		border-style: solid;
+		border-width: 7px;
+		border-image: @descriptiveBoxImage 12 stretch;
+		border-image-outset: 4px;
+		padding: 0.1em;
+		box-shadow: 0 0 6px #faf7ea;
 
 		.page :where(&) {
 			margin-top: 4px; //Prevent top border getting cut off on colbreak
@@ -811,7 +769,7 @@ body {
 		p {
 			display: block;
 			padding-bottom: 0px;
-			//line-height: 1.5em;
+			line-height: 1.5em;
 		}
 
 		:last-child {
@@ -1290,7 +1248,7 @@ body {
 
 	//Text indent right after table
 	table+p {
-		//text-indent: 1em;
+		text-indent: 1em;
 	}
 
 	// Nested lists
