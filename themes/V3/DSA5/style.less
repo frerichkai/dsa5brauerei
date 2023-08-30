@@ -287,6 +287,7 @@ body {
 		max-width: 21cm;
 		max-height: 4.3cm;
 		height: 4.3cm;
+		background-attachment: ;
 		padding: 1.7cm 2cm;
 
 		/*
@@ -322,16 +323,16 @@ body {
 	//	padding-top: 10px
 	//}
 
-	//	h1::after {
-	//		content: url('/assets/ilaris/kapitel-kurz-rechts-40-75.png');
-	//		//top: 7px;
-	//		position: relative;
-	//		left: 10px;
-	//		vertical-align: middle;
-	//		margin-top: auto;
-	//		margin-bottom: auto;
-	//		padding-top: 10px
-	//	}
+//	h1::after {
+//		content: url('/assets/ilaris/kapitel-kurz-rechts-40-75.png');
+//		//top: 7px;
+//		position: relative;
+//		left: 10px;
+//		vertical-align: middle;
+//		margin-top: auto;
+//		margin-bottom: auto;
+//		padding-top: 10px
+//	}
 
 	h2 {
 		//margin-top    : 0px; //Font is misaligned. Shift up slightly
@@ -773,7 +774,7 @@ body {
 		width: calc(100% + 1.6cm);
 		height: 20px;
 		content: "";
-		background-image: url("/assets/dsa5/Absatztrenner_unten Kopie.png");
+		background-image: url("/assets/dsa5/Absatztrenner_unten Maske Kopie.png");
 		height: 0.8cm;
 		background-position: -0.5cm -0.4cm;
 		background-width: 4cm;
@@ -1352,7 +1353,7 @@ body {
 		content: '';
 		position: absolute;
 		background-image: @classTableDecoration,
-		@classTableDecoration;
+			@classTableDecoration;
 		background-size: contain, contain;
 		background-repeat: no-repeat, no-repeat;
 		background-position: top, bottom;
@@ -1466,8 +1467,8 @@ body {
 			border-bottom: 1px solid #000000aa;
 			box-shadow: 0 0.2em 0.3em rgba(0,0,0,0.4);
 
-			// display: table;
-			// text-align: right;
+            // display: table;
+            // text-align: right;
 			.p {
 				display: inline;
 			}
@@ -1537,63 +1538,63 @@ body {
 		}
 
 		// copy from manoever plugin
-		// .statcontent
-		// {
-		//     font-size: 7pt;
-		//     display: inline-flex;
-		//     flex-direction: row;
-		//     height: 1.0em;
-		//     vertical-align: middle;
-		// }
+        // .statcontent
+        // {
+        //     font-size: 7pt;
+        //     display: inline-flex;
+        //     flex-direction: row;
+        //     height: 1.0em;
+        //     vertical-align: middle;
+        // }
 
-		// .statcontent img
-		// {
-		//     height: 1.1em;
-		//     width: auto;
-		//     display: inline;
-		//     margin: 0;
-		//     position: relative;
-		//     top: -0.05em;
-		// }
+        // .statcontent img
+        // {
+        //     height: 1.1em;
+        //     width: auto;
+        //     display: inline;
+        //     margin: 0;
+        //     position: relative;
+        //     top: -0.05em;
+        // }
 
-		// .statcontent span
-		// {
-		//     font-family: FontAwesome;
-		//     font-weight: 900;
-		//     -webkit-text-stroke: 0.5px #DED5BFdd; /* improve icon readbility */
-		// }
+        // .statcontent span
+        // {
+        //     font-family: FontAwesome;
+        //     font-weight: 900;
+        //     -webkit-text-stroke: 0.5px #DED5BFdd; /* improve icon readbility */
+        // }
 
 
 
 		.fertigkeiten {
-			position: absolute;
-			bottom: 0px;
+            position: absolute;
+            bottom: 0px;
 			left:0px;
 			right: 0px;
 			margin-left: auto;
 			margin-right: auto;
 			width: fit-content;
-			height: 22px;
+            height: 22px;
 
-			padding-left: 4px;
-			padding-right: 4px;
-			padding-top: 1px;
-			padding-bottom: 1px;
+            padding-left: 4px;
+            padding-right: 4px;
+            padding-top: 1px;
+            padding-bottom: 1px;
 
-			background: url(/assets/ilaris/layout/kasten_2_lq.jpg);
-			background-repeat: no-repeat;
-			background-size: 100% 100%;
+            background: url(/assets/ilaris/layout/kasten_2_lq.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
 
 
-			display: flex;
-			align-items: center;
-			column-gap: 4px;
-			justify-content: space-between;
-			text-align: center;
-			clip-path: inset(0px 0px 1px 0px);
+            display: flex;
+            align-items: center;
+            column-gap: 4px;
+            justify-content: space-between;
+            text-align: center;
+            clip-path: inset(0px 0px 1px 0px);
 
 			//assets\ilaris\fertigkeiten_magie
-		}
+        }
 
 		.fertigkeit {
 			background-size: 100% 100%;
@@ -1933,7 +1934,7 @@ body {
 		// theme default (light)
 		color: var(--HB_Color_HeaderText);
 		filter:
-						drop-shadow(0 0 0.7px #eae1ce) drop-shadow(0 0 0 #eae1ce) drop-shadow(0 0 0 #eae1ce) drop-shadow(0 0 0 #eae1ce) drop-shadow(0 0 0 #eae1ce) drop-shadow(0 0 0 #eae1ce) drop-shadow(0 0 0 #eae1ce) drop-shadow(0 0 0 #eae1ce);
+			drop-shadow(0 0 0.7px #eae1ce) drop-shadow(0 0 0 #eae1ce) drop-shadow(0 0 0 #eae1ce) drop-shadow(0 0 0 #eae1ce) drop-shadow(0 0 0 #eae1ce) drop-shadow(0 0 0 #eae1ce) drop-shadow(0 0 0 #eae1ce) drop-shadow(0 0 0 #eae1ce);
 	}
 
 	.logo {

@@ -26,7 +26,7 @@ const BrewRenderer = createClass({
 			text     : '',
 			style    : '',
 			renderer : 'V3',
-			theme    : 'Ilaris',
+			theme    : 'DSA5',
 			lang     : '',
 			errors   : []
 		};

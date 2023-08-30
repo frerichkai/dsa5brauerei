@@ -36,6 +36,13 @@
       "baseSnippets": false,
       "path": "Ilaris"
     },
+    "DSA5": {
+      "name": "DSA5",
+      "renderer": "V3",
+      "baseTheme": false,
+      "baseSnippets": false,
+      "path": "DSA5"
+    },
     "Journal": {
       "name": "Journal",
       "renderer": "V3",

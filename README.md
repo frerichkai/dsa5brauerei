@@ -8,3 +8,11 @@ Um direkt durchzustarten, besuche unserer [Brauerei direkt im Browser](https://b
 Vielleicht finden wir uns im Forum zusammen um gemeinsam etwas zu brauen? Wir könnten einfach den Link austauschen und gemeinsam an einem Gebräu arbeiten. (Macht ein Backup bevor ihr euer Projekt aus der Hand gebt)
 
 Um mit zu entwickeln, melde dich einfach im Discord oder Forum oder wenn du schon ein Feature planst mache direkt ein Issue auf.
+
+# DSA5
+
+Um Dokumente im Stil von DSA5-Publikationen erzeugen zu können, werden noch die Grafiken aus dem Scriptoriums-Paket benötigt. Diese können aus Copyright-Gründen nicht hier im Repository gespeichert werden.
+
+Die fehlenden Grafiken können hier heruntergeladen werden: https://www.ulisses-ebooks.de/product/197880/Scriptorium-Aventuris--LayoutBaukasten
+
+Kopiere alle .png-Dateien aus dem Verzeichnis ***/Scriptorium Aventuris v4/PNG innen*** in das Verzeichnis ***/themes/assets/dsa5***
