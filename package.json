@@ -99,7 +99,7 @@
     "marked": "7.0.5",
     "marked-extended-tables": "^1.0.6",
     "marked-gfm-heading-id": "^3.0.6",
-    "marked-smartypants-lite": "^1.0.0",
+    "marked-smartypants-lite": "^1.0.1",
     "markedLegacy": "npm:marked@^0.3.19",
     "moment": "^2.29.4",
     "mongoose": "^7.5.0",
