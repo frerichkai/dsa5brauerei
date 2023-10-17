@@ -102,7 +102,7 @@
     "marked-smartypants-lite": "^1.0.0",
     "markedLegacy": "npm:marked@^0.3.19",
     "moment": "^2.29.4",
-    "mongoose": "^7.5.0",
+    "mongoose": "^7.6.3",
     "nanoid": "4.0.2",
     "nconf": "^0.12.0",
     "npm": "^9.8.1",
